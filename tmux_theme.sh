@@ -1,2 +1,2 @@
-wget https://github.com/jimeh/tmux-themepack/blob/master/powerline/double/blue.tmuxtheme ~/.tmux.conf
+wget https://raw.githubusercontent.com/jimeh/tmux-themepack/master/powerline/double/blue.tmuxtheme -O ~/.tmux.conf
 tmux source-file ~/.tmux.conf

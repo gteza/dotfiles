@@ -30,6 +30,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'joshdick/onedark.vim'
 Plugin 'lifepillar/vim-solarized8'
+Plugin 'dracula/vim'
+Plugin 'wikitopian/hardmode'
+Plugin 'morhetz/gruvbox'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,11 +85,20 @@ set laststatus=2
 :set textwidth=100
 
 "set colorscheme
-colorscheme onedark
+"set termguicolors
+"colorscheme onedark
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
 "set background=light
-"colorscheme solarized8
+"set background=dark
+"colorscheme solarized8_high
 
 "set airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='onedark'
+let g:airline_theme='gruvbox'
+
+"disable arrow keys
+let g:HardMode_level = 'wannabe'
+let g:HardMode_hardmodeMsg = "Don't use this!"
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
