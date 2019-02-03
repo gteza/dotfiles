@@ -33,6 +33,7 @@ Plugin 'lifepillar/vim-solarized8'
 Plugin 'dracula/vim'
 Plugin 'wikitopian/hardmode'
 Plugin 'morhetz/gruvbox'
+Plugin 'chrisbra/vim-autoread'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,6 +59,9 @@ set laststatus=2
 
 "miscellanous stuff
 "Turn on syntax highlighting:
+
+"reload file automatically
+":AutoRead
 
 :syntax on
 "For all files, set the format options, turn of C indentation, and finally set the comments option to the default.
@@ -88,6 +92,8 @@ set laststatus=2
 "set termguicolors
 "colorscheme onedark
 let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_italic='1'
+let g:gruvbox_termcolors='256'
 colorscheme gruvbox
 "set background=light
 "set background=dark
