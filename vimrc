@@ -64,10 +64,13 @@ set laststatus=2
 ":AutoRead
 
 :syntax on
-"For all files, set the format options, turn of C indentation, and finally set the comments option to the default.
+"For all files, set the format options, turn off C indentation, and finally set the comments option to the default.
 :autocmd FileType *      set formatoptions=tcql nocindent comments&
 "For all C and C++ files, set the formatoptions, turn on C indentation, and set the comments option.
 :autocmd FileType c,cpp  set formatoptions=croql cindent comments=sr:/*,mb:*,ex:*/,://
+"Add gnuplot filetypes
+"au BufRead,BufNewFile *.gnu, *.plt, *.gpi, *.gih, *.gp, *.gnuplot set filetype=gnuplot
+au BufRead,BufNewFile *.gnuplot set filetype=gnuplot
 "Turn on automatic indentation.
 :set autoindent
 "Automatically write files as needed.
