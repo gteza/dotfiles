@@ -1,2 +1,3 @@
 # dotfiles
-Hi from node-0. Trying to make ssh work.
+Hi from node-0. ssh working! 
+Remember to clone from ssh and not https
