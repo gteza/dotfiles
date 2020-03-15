@@ -31,6 +31,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'joshdick/onedark.vim'
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'dracula/vim'
+Plugin 'arcticicestudio/nord-vim'
 Plugin 'wikitopian/hardmode'
 Plugin 'morhetz/gruvbox'
 Plugin 'chrisbra/vim-autoread'
@@ -94,17 +95,27 @@ au BufRead,BufNewFile *.gnuplot set filetype=gnuplot
 "set colorscheme
 "set termguicolors
 "colorscheme onedark
-let g:gruvbox_contrast_dark='hard'
-let g:gruvbox_italic='1'
-let g:gruvbox_termcolors='256'
-colorscheme gruvbox
+
+"BELOW SETTINGS FOR ONEDARK
+"let g:gruvbox_contrast_dark='hard'
+"let g:gruvbox_italic='1'
+"let g:gruvbox_termcolors='256'
+"colorscheme gruvbox
+
+"BELOW SETTINGS FOR NORD
+let g:nord_italic = 1
+let g:nord_underline = 1
+let g:nord_italic_comments = 1
+let g:nord_uniform_status_lines = 1
+colorscheme nord
+
 "set background=light
 "set background=dark
 "colorscheme solarized8_high
 
 "set airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
+"let g:airline_theme='gruvbox'
 
 "disable arrow keys
 let g:HardMode_level = 'wannabe'
